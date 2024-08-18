@@ -1,0 +1,218 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Roboto,sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column
+}
+
+.main-nav {
+  height: 100px;
+  top: 0;
+  background-color: #4169e1;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  z-index: 1000
+}
+
+.main-nav h1 {
+  margin: 10px 0 0;
+  font-size: 2em
+}
+
+.main-nav p {
+  margin: 0 0 10px;
+  font-style: italic
+}
+
+.category-nav {
+  background-color: #303030;
+  padding: 10px 0
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 0 5px;
+  border-radius: 50px;
+  background-color: #6a9ae2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s
+}
+
+.badge:hover {
+  background-color: #4169e1
+}
+
+.content {
+  padding-top: 20px;
+  text-align: center
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
+  justify-content: center
+}
+
+.card,.card-backQ {
+  background-color: #4169e1;
+  background-image: url("./basketball.svg");
+  box-shadow: 0 4px 8px #00000080;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  height: 200px;
+  width: 370px;
+  transition: transform .3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer
+}
+
+.card-backTrue {
+  background-color: green;
+  background-image: url("./basketball.svg");
+  box-shadow: 0 4px 8px #00000080;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  height: 200px;
+  width: 370px;
+  transition: transform .3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer
+}
+
+.card-backFalse {
+  background-color: red;
+  background-image: url("./basketball.svg");
+  box-shadow: 0 4px 8px #00000080;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  height: 200px;
+  width: 370px;
+  transition: transform .3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-back {
+  background-color: #b322a3
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #6a9ae2;
+  cursor: pointer
+}
+
+.category-button {
+  color: #fff;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 5px;
+  background-color: #6a9ae2
+}
+
+.categoryButton:hover {
+  transform: scale(1.1);
+  background-color: #4169e1
+}
+
+@media (max-width: 600px) {
+  .cardsContainer,.buttonContainer {
+      grid-template-columns:1fr
+  }
+}
+
+:root {
+  font-family: Inter,system-ui,Avenir,Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit
+}
+
+a:hover {
+  color: #535bf2
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: .6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color .25s
+}
+
+button:hover {
+  border-color: #646cff
+}
+
+button:focus,button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      color:#213547;
+      background-color: #fff
+  }
+
+  a:hover {
+      color: #747bff
+  }
+
+  button {
+      background-color: #f9f9f9
+  }
+}
